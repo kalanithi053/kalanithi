@@ -1,3 +1,4 @@
+import Footer from "@port/components/Footer";
 import Header from "@port/components/Header";
 import "@port/styles/globals.css";
 import type { AppProps } from "next/app";
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <PrimeReactProvider>
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </PrimeReactProvider>
   );
 }

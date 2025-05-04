@@ -14,12 +14,14 @@ export const projects = [
       {
         title: "Next Travel Connect",
         tech: "Shopify Hydrogen, React, TypeScript, Tailwind CSS",
+        id: "tect-1",
         description:
           "Built a travel-based e-commerce storefront using Shopify Hydrogen. Focused on reusable UI components, optimized routing, and performance enhancements.",
       },
       {
         title: "Certify",
         tech: "Shopify Hydrogen, React, TypeScript, Tailwind CSS",
+        id: "tect-2",
         description:
           "Developed an online certification store with fast-loading, SEO-optimized pages and a modular product display architecture.",
       },
@@ -32,6 +34,7 @@ export const projects = [
       {
         title: "SaaSify",
         tech: "HubSpot UI Extension, React, TypeScript, Tailwind CSS",
+        id: "tect-3",
         description:
           "Contributed to the Co-sell module integrating cloud marketplaces. Developed UI extensions for listing, managing, and co-selling SaaS offerings with HubSpot’s extension APIs.",
       },
@@ -44,6 +47,7 @@ export const projects = [
       {
         title: "Padra Clinic",
         tech: "React, Next.js, React Calendar Timeline, TypeScript, Tailwind CSS",
+        id: "tect-4",
         description:
           "Created a hospital client scheduling system with precise time-slot validation, custom calendar logic, and improved UI for managing appointments and staff schedules.",
       },
@@ -56,6 +60,7 @@ export const projects = [
       {
         title: "Olive Plus",
         tech: "React, Next.js, PrimeReact, TypeScript, Tailwind CSS",
+        id: "tect-5",
         description:
           "Developed a company rating platform for the ELT industry with dynamic filtering, responsive design, and robust UI components using PrimeReact.",
       },
@@ -68,6 +73,7 @@ export const projects = [
       {
         title: "ALM Inventory Management App",
         tech: "React, Next.js, Redux, TypeScript, Tailwind CSS",
+        id: "tect-6",
         description:
           "Built a multi-location stock management system. Used Redux for state handling and implemented intuitive dashboards for tracking, updating, and analyzing inventory across branches.",
       },
