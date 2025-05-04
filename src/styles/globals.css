@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.header-dialog{
+  @apply fixed top-0 left-0 right-0 z-50;
+}

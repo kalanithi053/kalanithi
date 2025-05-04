@@ -7,11 +7,10 @@ const Projects = () => {
     document.title = "Projects | Kalanithi B";
   }, []);
   return (
-    <div className="bg-white max-w-7xl mx-auto px-6 py-12">
+    <div className="bg-white max-w-6xl mx-auto px-6 py-12">
       <h1 className="text-4xl font-bold text-gray-900 mb-10 text-center">
         Projects
       </h1>
-
       <div className="space-y-12">
         {projects.map((section) => (
           <div key={section.category}>
