@@ -41,6 +41,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer"
+            download="kalanithi-SE-resume.pdf"
           >
             <button className="border border-gray-400 px-6 py-2 rounded-lg text-base hover:bg-gray-100 cursor-pointer">
               Download Resume
