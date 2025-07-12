@@ -12,18 +12,18 @@ export const projects = [
     icon: <FaStore className="text-blue-600 text-xl" />,
     items: [
       {
-        title: "Next Travel Connect",
+        title: "Travel-Based E-Commerce Platform",
         tech: "Shopify Hydrogen, React, TypeScript, Tailwind CSS",
         id: "tect-1",
         description:
-          "Built a travel-based e-commerce storefront using Shopify Hydrogen. Focused on reusable UI components, optimized routing, and performance enhancements.",
+          "Built a travel-focused e-commerce storefront using Shopify Hydrogen. Focused on reusable UI components, optimized routing, and performance enhancements.",
       },
       {
-        title: "Certify",
+        title: "Online Certification Store",
         tech: "Shopify Hydrogen, React, TypeScript, Tailwind CSS",
         id: "tect-2",
         description:
-          "Developed an online certification store with fast-loading, SEO-optimized pages and a modular product display architecture.",
+          "Developed a fast-loading, SEO-optimized storefront for digital certification sales with a modular product display architecture.",
       },
     ],
   },
@@ -32,11 +32,11 @@ export const projects = [
     icon: <FaClipboardList className="text-purple-600 text-xl" />,
     items: [
       {
-        title: "SaaSify",
+        title: "Cloud Marketplace Co-Sell Module",
         tech: "HubSpot UI Extension, React, TypeScript, Tailwind CSS",
         id: "tect-3",
         description:
-          "Contributed to the Co-sell module integrating cloud marketplaces. Developed UI extensions for listing, managing, and co-selling SaaS offerings with HubSpot’s extension APIs.",
+          "Contributed to a co-sell enablement module integrated with cloud marketplaces. Developed HubSpot UI extensions for listing, managing, and co-selling SaaS offerings.",
       },
     ],
   },
@@ -45,11 +45,11 @@ export const projects = [
     icon: <FaHospital className="text-emerald-600 text-xl" />,
     items: [
       {
-        title: "Padra Clinic",
+        title: "Clinic Appointment Scheduling System",
         tech: "React, Next.js, React Calendar Timeline, TypeScript, Tailwind CSS",
         id: "tect-4",
         description:
-          "Created a hospital client scheduling system with precise time-slot validation, custom calendar logic, and improved UI for managing appointments and staff schedules.",
+          "Created a scheduling platform for healthcare providers featuring precise time-slot validation, custom calendar logic, and an optimized UI for managing appointments and staff schedules.",
       },
     ],
   },
@@ -58,11 +58,11 @@ export const projects = [
     icon: <FaStar className="text-yellow-500 text-xl" />,
     items: [
       {
-        title: "Olive Plus",
+        title: "Company Rating Platform for Education Sector",
         tech: "React, Next.js, PrimeReact, TypeScript, Tailwind CSS",
         id: "tect-5",
         description:
-          "Developed a company rating platform for the ELT industry with dynamic filtering, responsive design, and robust UI components using PrimeReact.",
+          "Built a responsive platform for user reviews and ratings in the education and learning sector with dynamic filtering and rich UI components using PrimeReact.",
       },
     ],
   },
@@ -71,11 +71,11 @@ export const projects = [
     icon: <FaChartBar className="text-indigo-600 text-xl" />,
     items: [
       {
-        title: "ALM Inventory Management App",
+        title: "Multi-Location Inventory Management System",
         tech: "React, Next.js, Redux, TypeScript, Tailwind CSS",
         id: "tect-6",
         description:
-          "Built a multi-location stock management system. Used Redux for state handling and implemented intuitive dashboards for tracking, updating, and analyzing inventory across branches.",
+          "Designed a stock management system supporting multiple branches. Integrated Redux for state handling and created intuitive dashboards for tracking and analyzing inventory.",
       },
     ],
   },
