@@ -4,6 +4,7 @@ const CrmLookupWidget = () => {
   const [loading, setLoading] = useState(true);
   const [currentRecord, setCurrentRecord] = useState<any>(null);
   useEffect(() => {
+    console.log(window);
     (window as any)?.ZOHO?.embeddedApp?.on("PageLoad", async (data: any) => {
       if (!data?.Entity || !data?.EntityId) return;
       console.log("data", data);
