@@ -15,9 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [router]);
   return (
     <PrimeReactProvider>
-      <Header />
+      {/* <Header /> */}
       <Component {...pageProps} />
-      <Footer />
+      {/* <Footer /> */}
     </PrimeReactProvider>
   );
 }
