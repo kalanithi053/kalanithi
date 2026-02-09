@@ -2,9 +2,9 @@ import React from "react";
 import { useEffect, useState } from "react";
 const CrmLookupWidget = () => {
   const [loading, setLoading] = useState(true);
-  const [currentRecord, setCurrentRecord] = useState(null);
+  const [currentRecord, setCurrentRecord] = useState<any>(null);
   useEffect(() => {
-    (window as any)?.ZOHO?.embeddedApp?.on("PageLoad", async (data) => {
+    (window as any)?.ZOHO?.embeddedApp?.on("PageLoad", async (data: any) => {
       if (!data?.Entity || !data?.EntityId) return;
       console.log("data", data);
       console.log("window.ZOHO", (window as any)?.ZOHO);
