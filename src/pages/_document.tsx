@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <Script src="https://live.zwidgets.com/js-sdk/1.2/ZohoEmbededAppSDK.min.js" strategy="afterInteractive" />
+        <Script src="https://static.zohocdn.com/zohocrm/v2.0/sdk/4.0.0/sdk.js" strategy="afterInteractive" />
       </Head>
       <body className="antialiased">
         <Main />
