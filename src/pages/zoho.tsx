@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 const CrmLookupWidget = () => {
   const [loading, setLoading] = useState(true);
   const [currentRecord, setCurrentRecord] = useState<any>(null);
-  useEffect(() => {
-    console.log(window);
+  const initalizeZoho = async () => {
+    await (window as any)?.ZOHO?.embeddedApp?.init();
     (window as any)?.ZOHO?.embeddedApp?.on("PageLoad", async (data: any) => {
       if (!data?.Entity || !data?.EntityId) return;
       console.log("data", data);
@@ -49,8 +49,9 @@ const CrmLookupWidget = () => {
         setLoading(false);
       }
     });
-
-    (window as any)?.ZOHO?.embeddedApp?.init();
+  };
+  useEffect(() => {
+    initalizeZoho();
   }, []);
 
   if (loading) return <p>Loading CRM data...</p>;
