@@ -4,50 +4,50 @@ const CrmLookupWidget = () => {
   const [loading, setLoading] = useState(true);
   const [currentRecord, setCurrentRecord] = useState(null);
   useEffect(() => {
-    window.ZOHO.embeddedApp.on("PageLoad", async (data) => {
+    (window as any)?.ZOHO?.embeddedApp?.on("PageLoad", async (data) => {
       if (!data?.Entity || !data?.EntityId) return;
       console.log("data", data);
-      console.log("window.ZOHO", window.ZOHO);
+      console.log("window.ZOHO", (window as any)?.ZOHO);
       try {
         setLoading(true);
 
         // 1️⃣ Get current record
-        const recordRes = await window.ZOHO.CRM.API.getRecord({
+        const recordRes = await (window as any)?.ZOHO?.CRM?.API?.getRecord({
           Entity: data.Entity,
           RecordID: data.EntityId,
         });
-        const orgInfo = await window.ZOHO.CRM.CONFIG.getOrgInfo();
-        const GetCurrentEnvironment = await window.ZOHO.CRM.CONFIG.GetCurrentEnvironment();
-        const getCurrentUser = await window.ZOHO.CRM.CONFIG.getCurrentUser();
+        const orgInfo = await (window as any)?.ZOHO?.CRM?.CONFIG?.getOrgInfo();
+        const GetCurrentEnvironment = await (window as any)?.ZOHO?.CRM?.CONFIG?.GetCurrentEnvironment();
+        const getCurrentUser = await (window as any)?.ZOHO?.CRM?.CONFIG?.getCurrentUser();
         console.log("orgInfo", orgInfo);
         console.log(" GetCurrentEnvironment", GetCurrentEnvironment);
         console.log(" getCurrentUser", getCurrentUser);
-        window.ZOHO.CRM.API.upsertRecord({
-          Entity: data.Entity,
-          APIData: [
-            {
-              Name: "FromApi Co-sell",
-              Stage: "Prospect",
-            },
-          ],
-        })
-          .then((dataInsert) => {
-            console.log(dataInsert);
-          })
-          .catch((err) => {
-            console.log(err);
-          });
+        // (window as any)?.ZOHO?.CRM?.API?.upsertRecord({
+        //   Entity: data.Entity,
+        //   APIData: [
+        //     {
+        //       Name: "FromApi Co-sell",
+        //       Stage: "Prospect",
+        //     },
+        //   ],
+        // })
+        //   .then((dataInsert) => {
+        //     console.log(dataInsert);
+        //   })
+        //   .catch((err) => {
+        //     console.log(err);
+        //   });
 
         console.log("recordRes", recordRes);
         const record = recordRes.data[0];
         setCurrentRecord(record);
-        console.error("Zoho CRM error:", err);
+        // console.error("Zoho CRM error:", err);
       } finally {
         setLoading(false);
       }
     });
 
-    window.ZOHO.embeddedApp.init();
+    (window as any)?.ZOHO?.embeddedApp?.init();
   }, []);
 
   if (loading) return <p>Loading CRM data...</p>;
