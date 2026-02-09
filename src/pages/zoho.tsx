@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { useEffect, useState } from "react";
+
 const CrmLookupWidget = () => {
   const [loading, setLoading] = useState(true);
   const [currentRecord, setCurrentRecord] = useState<any>(null);
